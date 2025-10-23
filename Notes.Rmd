@@ -1,0 +1,18 @@
+---
+title: "Notes"
+author: "Theodora Commandeur"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Getting started
+
+## Running the app
+
+* While running the Shiny app, the console displays "Listening on http://127.0.0.1:5919" - this URL can be copied into any compatible web browser  
+* You can reload the app after making changes while its running using `Cmd/Ctrl + Shift + Enter`  
+
