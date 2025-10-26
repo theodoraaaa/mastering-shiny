@@ -16,3 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * While running the Shiny app, the console displays "Listening on http://127.0.0.1:5919" - this URL can be copied into any compatible web browser  
 * You can reload the app after making changes while its running using `Cmd/Ctrl + Shift + Enter`  
 
+## Adding behaviour
+
+* render{Type} is often matched with {type}Output 
+
