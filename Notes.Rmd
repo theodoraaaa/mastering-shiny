@@ -11,12 +11,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Getting started
 
-## Running the app
+## Your first Shiny app
+
+### Running the app
 
 * While running the Shiny app, the console displays "Listening on http://127.0.0.1:5919" - this URL can be copied into any compatible web browser  
 * You can reload the app after making changes while its running using `Cmd/Ctrl + Shift + Enter`  
 
-## Adding behaviour
+### Adding behaviour
 
 * render{Type} is often matched with {type}Output 
 * To avoid repeating lines of code, usually either use a variable or a function - in Shiny you use reactive expressions
