@@ -19,4 +19,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Adding behaviour
 
 * render{Type} is often matched with {type}Output 
+* To avoid repeating lines of code, usually either use a variable or a function - in Shiny you use reactive expressions
+* Reactive expressions involve wrapping a chunk of code and sotring it in a variable, and calling it like a function - it will only run the first time it is called and then caches the result
 
