@@ -4,8 +4,8 @@ library(ggplot2)
 datasets <- c("economics", "faithfuld", "seals")
 ui <- fluidPage(
   selectInput("dataset", "Dataset", choices = datasets),
-  verbatimTextOutput("summary"),
-  tableOutput("plot")
+  verbatimTextOutput("summary"), 
+  plotOutput("plot") # used tableOutput() instead of plotOutput()
 )
 
 server <- function(input, output, session) {
@@ -15,8 +15,8 @@ server <- function(input, output, session) {
   output$summary <- renderPrint({
     summary(dataset())
   })
-  output$plot <- renderPlot({
-    plot(dataset)
+  output$plot <- renderPlot({ 
+    plot(dataset()) # was missing () 
   }, res = 96)
 }
 
